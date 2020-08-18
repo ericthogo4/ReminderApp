@@ -2,7 +2,7 @@
 
 Reminder app is a free and quick app that enables users to set reminders for tasks using alarms and notifications. It is available offline.
 
-It will allows one to set reminders related to:
+It allows one to set reminders related to:
 •	Exams
 •	Prayer
 •	Taking pills
