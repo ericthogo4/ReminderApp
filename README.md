@@ -21,4 +21,6 @@ It allows one to set reminders related to:
 •	Vaccination
 You name it.
 
+Here is a link to a video that showcases it: https://www.youtube.com/watch?v=xej_TRcAGz8 
+
 Get it on Google Play using the link: https://play.google.com/store/apps/details?id=com.tasks.medicine.study.reminderapp.
