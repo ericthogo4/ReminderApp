@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    >
+    <item android:id="@+id/rem_activity_help"
+        android:title="Help"
+        android:contentDescription="Help"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/rem_activity_sa"
+        android:title="Share App"
+        android:contentDescription="Share App"
+        app:showAsAction="never" />
+
+</menu>

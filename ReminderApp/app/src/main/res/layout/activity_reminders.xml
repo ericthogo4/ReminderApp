@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="#FFFFFF"
+android:layout_height="match_parent"
+android:id="@+id/ch_root_layout"
+tools:context="com.tasks.medicine.study.reminderapp.RemindersActivity"
+    >
+
+<include layout="@layout/content_reminders" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/new_reminder_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:contentDescription="@string/new_reminder"
+    android:layout_margin="@dimen/fab_margin"
+    app:srcCompat="@drawable/fab_add_icon" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

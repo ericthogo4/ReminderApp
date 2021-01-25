@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Reminder App</string>
+    <string name="teit_error_text">This field is mandatory</string>
+    <string name="del_reminder_dialog_negative_button">Cancel</string>
+    <string name="ra_empty_state_title">No Reminders</string>
+    <string name="ra_empty_state_text">Add a reminder and it will appear here</string>
+    <string name="ra_copy_confirmation_text">Reminder title copied</string>
+    <string name="delete_reminder_dialog_title">Delete Reminder</string>
+    <string name="delete_reminder_dialog_message">This action cannot be undone</string>
+    <string name="delete_reminder_dialog_positive_button">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="new_reminder">new Reminder</string>
+    <string name="reminder_set_c">Reminder Set</string>
+    <string name="channel_name">Reminder Notification</string>
+    <string name="channel_description">Reminders</string>
+    <string name="r_r_title">rRTitle</string>
+    <string name="notification_ctitle">Reminder</string>
+    <string name="title">Title</string>
+
+
+    <string name="help_activity_action_bar_title">Help</string>
+    <string name="send_feedback">Send Feedback</string>
+
+    <string name="update_app_informative_text">A new version is available</string>
+    <string name="update_app_button_text">UPDATE</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>
