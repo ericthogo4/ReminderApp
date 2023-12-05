@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
 import androidx.core.app.NotificationCompat;
 
@@ -24,7 +23,7 @@ public class NotificationService extends JobIntentService {
     }
 
     @Override
-    protected void onHandleWork(@NonNull Intent intent) {
+    protected void onHandleWork(Intent intent) {
         String reminderTitle = intent.getExtras().getString(getString(R.string.r_r_title));
         setNotification(reminderTitle);
     }

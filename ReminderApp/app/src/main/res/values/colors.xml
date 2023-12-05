@@ -2,8 +2,8 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="recyclerViewItemSelectionColor">#50FF4081</color>
+    <color name="colorAccent">#7F6C27</color>
+    <color name="recyclerViewItemSelectionColor">#4FEBE252</color>
     <color name="mediumEmphasisTextColor">#99000000</color>
     <color name="highEmphasisTextColor">#de000000</color>
     <color name="black_overlay">#66000000</color>

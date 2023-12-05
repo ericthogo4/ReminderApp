@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OnboardingFragment">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:id="@+id/o_img_vw"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/o_ttle_tvw"
+        android:textColor="@color/highEmphasisTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Onboarding screen example"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/o_descpn_tvw"
+        android:textColor="@color/mediumEmphasisTextColor"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/get_started"
+        android:layout_marginTop="56dp"
+        android:text="@string/get_started"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+
+
+</LinearLayout>

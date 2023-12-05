@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">रिमाइंडर ऐप</string>
+    <string name="teit_error_text">यह फ़ील्ड अनिवार्य है</string>
+    <string name="del_reminder_dialog_negative_button">रद्द करना</string>
+    <string name="ra_empty_state_title">कोई अनुस्मारक नहीं</string>
+    <string name="ra_empty_state_text">एक अनुस्मारक जोड़ें और यह यहां दिखाई देगा</string>
+
+    <string name="ra_copy_confirmation_text">रिमाइंडर शीर्षक की नकल की गई है</string>
+    <string name="delete_reminder_dialog_title">रिमाइंडर हटाएं</string>
+    <string name="delete_reminder_dialog_message">इस कार्रवाई को पूर्ववत नहीं किया जा सकता</string>
+    <string name="copy">प्रतिलिपि</string>
+    <string name="edit">परसंपादित</string>
+
+    <string name="delete">हटाना</string>
+    <string name="new_reminder">नया रिमाइंडर</string>
+    <string name="reminder_set_c">रिमाइंडर सेट</string>
+
+    <string name="notification_ctitle">तकाज़ा</string>
+    <string name="title">उपाधि</string>
+    <string name="send_feedback">फीडबैक भेजें</string>
+    <string name="update_app_informative_text">एक नया संस्करण उपलब्ध है</string>
+
+    <string name="update_app_button_text">आधुनिकीकरणअ</string>
+    <string name="new_reminder1">नया रिमाइंडर</string>
+    <string name="save">रक्षा कर</string>
+    <string name="date">दिन की तारीख</string>
+    <string name="time">समय</string>
+
+    <string name="help">मदद</string>
+    <string name="share_app">शेयर ऐप</string>
+    <string name="edt_rmdr">रिमाइंडर संपादित करें</string>
+    <string name="st_rmd_dte">रिमाइंडर तिथि निर्धारित करें</string>
+    <string name="st_rmdr_tme">रिमाइंडर समय निर्धारित करें</string>
+
+    <string name="rmdr_updtd">रिमाइंडर अपडेट किया गया</string>
+    <string name="pmtn_msg_txt">रिमाइंडर ऐप एक तेज़ और सरल ऐप है जिसका उपयोग मैं कार्यों को शेड्यूल करने के लिए करता हूं। इसे से प्राप्त करें: https://play.google.com/store/apps/details?id=</string>
+    <string name="sr_va">के माध्यम से साझा करें</string>
+
+    <string name="flexibility_o_title">लचीले ढंग से अनुस्मारक सेट करें</string>
+    <string name="flexibility_o_text">अपने हाथ की हथेली से कार्य आइटम बनाएं</string>
+    <string name="speed_o_title">कार्यों को शीघ्रता से शेड्यूल करें</string>
+    <string name="speed_o_text">तेज़ सुविधाएँ प्रदान की जाती हैं</string>
+    <string name="get_started">शुरू हो जाओ</string>
+
+</resources>

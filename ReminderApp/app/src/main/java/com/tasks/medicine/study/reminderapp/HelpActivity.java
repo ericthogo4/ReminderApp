@@ -16,7 +16,7 @@ public class HelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
         getSupportActionBar().setElevation(0);
-        getSupportActionBar().setTitle(R.string.help_activity_action_bar_title);
+        getSupportActionBar().setTitle(R.string.help);
 
         TextView helpActivityTextView=findViewById(R.id.help_activity_text_view);
 

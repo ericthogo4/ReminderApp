@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Приложение для напоминаний</string>
+    <string name="teit_error_text">Это поле обязательно для заполнения</string>
+    <string name="del_reminder_dialog_negative_button">Отмена</string>
+    <string name="ra_empty_state_title">Без напоминаний</string>
+    <string name="ra_empty_state_text">Добавьте напоминание, и оно появится здесь</string>
+
+    <string name="ra_copy_confirmation_text">Скопирован заголовок напоминания</string>
+    <string name="delete_reminder_dialog_title">Удалить напоминание</string>
+    <string name="delete_reminder_dialog_message">Это действие не может быть отменено</string>
+    <string name="copy">Копировать</string>
+    <string name="edit">Редактировать</string>
+
+    <string name="delete">Удалить</string>
+    <string name="new_reminder">новое напоминание</string>
+    <string name="reminder_set_c">Набор напоминаний</string>
+
+    <string name="notification_ctitle">Напоминание</string>
+    <string name="title">Титул</string>
+    <string name="send_feedback">Отправить отзыв</string>
+    <string name="update_app_informative_text">Доступна новая версия</string>
+
+    <string name="update_app_button_text">ОБНОВЛЯТЬ</string>
+    <string name="new_reminder1">Новое напоминание</string>
+    <string name="save">СПАСАТЬ</string>
+    <string name="date">Дата</string>
+    <string name="time">Время суток</string>
+
+    <string name="help">Справка</string>
+    <string name="share_app">Поделиться приложением</string>
+    <string name="edt_rmdr">Изменить напоминание</string>
+    <string name="st_rmd_dte">Установить дату напоминания</string>
+    <string name="st_rmdr_tme">Установка времени напоминания</string>
+
+    <string name="rmdr_updtd">Напоминание обновлено</string>
+    <string name="pmtn_msg_txt">Приложение напоминания - это быстрое и простое приложение, которое я использую для планирования задач. Получите его от: https://play.google.com/store/apps/details?id=</string>
+    <string name="sr_va">Поделиться через</string>
+
+    <string name="flexibility_o_title">Гибкая настройка напоминаний</string>
+    <string name="flexibility_o_text">Создавайте элементы задач прямо на ладони</string>
+    <string name="speed_o_title">Быстро планируйте задачи</string>
+    <string name="speed_o_text">Предоставляются быстрые функции</string>
+    <string name="get_started">НАЧАТЬ</string>
+
+</resources>

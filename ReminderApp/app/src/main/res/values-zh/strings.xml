@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">提醒的应用</string>
+    <string name="teit_error_text">此字段是强制性的</string>
+    <string name="del_reminder_dialog_negative_button">取消</string>
+    <string name="ra_empty_state_title">无提醒</string>
+    <string name="ra_empty_state_text">添加提醒，它会出现在这里</string>
+
+    <string name="ra_copy_confirmation_text">提醒标题已复制</string>
+    <string name="delete_reminder_dialog_title">删除提醒</string>
+    <string name="delete_reminder_dialog_message">此操作无法撤消</string>
+    <string name="copy">复制</string>
+    <string name="edit">编辑</string>
+
+    <string name="delete">删除</string>
+    <string name="new_reminder">新提醒</string>
+    <string name="reminder_set_c">提醒集</string>
+
+    <string name="notification_ctitle">提醒</string>
+    <string name="title">标题</string>
+    <string name="send_feedback">发送反馈</string>
+    <string name="update_app_informative_text">提供新版本</string>
+
+    <string name="update_app_button_text">更新</string>
+    <string name="new_reminder1">新提醒</string>
+    <string name="save">救</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+
+    <string name="help">帮助</string>
+    <string name="share_app">共享应用</string>
+    <string name="edt_rmdr">编辑提醒</string>
+    <string name="st_rmd_dte">设置提醒日期</string>
+    <string name="st_rmdr_tme">设置提醒时间</string>
+
+    <string name="rmdr_updtd">提醒已更新</string>
+    <string name="pmtn_msg_txt">提醒应用程序是一个快速和简单的应用程序，我用来安排任务。从这里获取它：https://play.google.com/store/apps/details?id=</string>
+    <string name="sr_va">共享通过</string>
+
+    <string name="flexibility_o_title">灵活设置提醒</string>
+    <string name="flexibility_o_text">从手掌中创建任务项目</string>
+    <string name="speed_o_title">快速安排任务</string>
+    <string name="speed_o_text">应用程序中提供快速功能</string>
+    <string name="get_started">开始吧</string>
+
+</resources>

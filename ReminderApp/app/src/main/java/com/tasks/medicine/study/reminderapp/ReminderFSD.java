@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import androidx.fragment.app.DialogFragment;
@@ -115,11 +114,11 @@ public class ReminderFSD extends DialogFragment implements DatePickerDialog.OnDa
         titleTvw = rootView.findViewById(R.id.action_bar_title_tvw);
 
         if(isEditMode){
-            titleTvw.setText("Edit Reminder");
+            titleTvw.setText(R.string.edt_rmdr);
         }
 
         else {
-            titleTvw.setText("New Reminder");
+            titleTvw.setText(R.string.new_reminder1);
         }
 
         reminderInterface = (ReminderInterface)getActivity();
@@ -253,7 +252,7 @@ public class ReminderFSD extends DialogFragment implements DatePickerDialog.OnDa
         reminderInterface.showActionBar();
     }
 
-    @NonNull
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Dialog reminderFSD = super.onCreateDialog(savedInstanceState);
@@ -300,8 +299,8 @@ public class ReminderFSD extends DialogFragment implements DatePickerDialog.OnDa
         nRDatePDialog.setCanceledOnTouchOutside(true);
         nRTimePDialog.setCanceledOnTouchOutside(true);
 
-        nRDatePDialog.setTitle("Set Reminder Date");
-        nRTimePDialog.setTitle("Set Reminder Time");
+        nRDatePDialog.setTitle(getString(R.string.st_rmd_dte));
+        nRTimePDialog.setTitle(getString(R.string.st_rmdr_tme));
     }
 
     private void hideKeyboard(View view){

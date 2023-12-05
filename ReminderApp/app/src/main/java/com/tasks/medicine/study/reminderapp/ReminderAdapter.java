@@ -22,6 +22,7 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.Remind
     public ReminderAdapter(Context reminderAdapterContext, List<Reminder> reminderList) {
         this.reminderAdapterContext = reminderAdapterContext;
         this.reminderList = reminderList;
+
     }
 
     @Override

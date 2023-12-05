@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación de recordatorio</string>
+    <string name="teit_error_text">Este campo es obligatorio</string>
+    <string name="del_reminder_dialog_negative_button">Cancelar</string>
+    <string name="ra_empty_state_title">Sin recordatorios</string>
+    <string name="ra_empty_state_text">Añade un recordatorio y aparecerá aquí</string>
+
+    <string name="ra_copy_confirmation_text">Título del recordatorio copiado</string>
+    <string name="delete_reminder_dialog_title">Eliminar recordatorio</string>
+    <string name="delete_reminder_dialog_message">Esta acción no se puede deshacer</string>
+    <string name="copy">Copiar</string>
+    <string name="edit">Editar</string>
+
+    <string name="delete">Eliminar</string>
+    <string name="new_reminder">nuevo recordatorio</string>
+    <string name="reminder_set_c">Conjunto de recordatorios</string>
+
+    <string name="notification_ctitle">Recordatorio</string>
+    <string name="title">Título</string>
+    <string name="send_feedback">Enviar comentarios</string>
+    <string name="update_app_informative_text">Una nueva versión está disponible</string>
+
+    <string name="update_app_button_text">ACTUALIZAR</string>
+    <string name="new_reminder1">Nuevo recordatorio</string>
+    <string name="save">SALVAR</string>
+    <string name="date">Fecha</string>
+    <string name="time">Tiempo</string>
+
+    <string name="help">Ayuda</string>
+    <string name="share_app">Compartir aplicación</string>
+    <string name="edt_rmdr">Editar recordatorio</string>
+    <string name="st_rmd_dte">Establecer fecha de recordatorio</string>
+    <string name="st_rmdr_tme">Establecer la hora de recordatorio</string>
+
+    <string name="rmdr_updtd">El recordatorio se ha actualizado</string>
+    <string name="pmtn_msg_txt">La aplicación de recordatorio es una aplicación rápida y simple que uso para programar tareas. Consételo en: https://play.google.com/store/apps/details?id=</string>
+    <string name="sr_va">Compartir a través de</string>
+
+
+    <string name="flexibility_o_title">Establecer recordatorios de forma flexible</string>
+    <string name="flexibility_o_text">Crea elementos de tarea desde la palma de tu mano</string>
+    <string name="speed_o_title">Programe tareas rápidamente</string>
+    <string name="speed_o_text">Se proporcionan funciones rápidas</string>
+    <string name="get_started">EMPEZAR</string>
+
+</resources>

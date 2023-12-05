@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق التذكير</string>
+    <string name="teit_error_text">هذا الحقل إلزامي</string>
+    <string name="del_reminder_dialog_negative_button">إلغاء الأمر</string>
+    <string name="ra_empty_state_title">لا تذكيرات</string>
+    <string name="ra_empty_state_text">إضافة تذكير وسوف تظهر هنا</string>
+
+    <string name="ra_copy_confirmation_text">تم نسخ نص التذكير</string>
+    <string name="delete_reminder_dialog_title">حذف التذكير</string>
+    <string name="delete_reminder_dialog_message">لا يمكن التراجع عن هذا الإجراء</string>
+    <string name="copy">نسخ</string>
+    <string name="edit">حرر</string>
+
+    <string name="delete">حذف</string>
+    <string name="new_reminder">تذكير جديد</string>
+    <string name="reminder_set_c">تم تعيين التذكير</string>
+
+    <string name="notification_ctitle">تذكير</string>
+    <string name="title">عنوان</string>
+    <string name="send_feedback">إرسال الآراء</string>
+    <string name="update_app_informative_text">يتوفر إصدار جديد</string>
+
+    <string name="update_app_button_text">تحديث</string>
+    <string name="new_reminder1">تذكير جديد</string>
+    <string name="save">منجز</string>
+    <string name="date">تاريخ اليوم</string>
+    <string name="time">الوقت</string>
+
+    <string name="help">تعليمات</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="edt_rmdr">تحرير تذكير</string>
+    <string name="st_rmd_dte">تعيين تاريخ التذكير</string>
+    <string name="st_rmdr_tme">تعيين وقت التذكير</string>
+
+    <string name="rmdr_updtd">تم تحديث التذكير</string>
+    <string name="pmtn_msg_txt">تطبيق التذكير هو تطبيق سريع وبسيط أستخدمه لجدولة المهام. احصل عليه من: https://play.google.com/store/apps/details?id=</string>
+    <string name="sr_va">شارك عبر</string>
+
+    <string name="flexibility_o_title">ضبط التذكيرات بمرونة</string>
+    <string name="flexibility_o_text">إنشاء عناصر المهمة من كف يدك</string>
+    <string name="speed_o_title">جدولة المهام بسرعة</string>
+    <string name="speed_o_text">يتم توفير ميزات سريعة</string>
+    <string name="get_started">البدء</string>
+
+</resources>

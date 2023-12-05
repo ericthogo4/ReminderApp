@@ -21,4 +21,37 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="RemindersActivityTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowTitleSize">@dimen/appbar_ph_dimension</item>
+        <item name="android:windowTitleStyle">@style/WindowTTheme</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTBackgroundTheme</item>
+        <item name="android:windowNoTitle">false</item>
+
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="WindowTTheme">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/WindowTTextTheme</item>
+    </style>
+
+    <style name="WindowTBackgroundTheme">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="WindowTTextTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+
+
+
+
 </resources>

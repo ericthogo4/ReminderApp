@@ -10,8 +10,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,10 +39,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import static android.view.View.GONE;
 
-public class RemindersActivity extends AppCompatActivity implements ActionMode.Callback, ReminderInterface {
+public class RemindersActivity extends LaunchScreenActivity implements ActionMode.Callback, ReminderInterface {
 
     private List<Reminder> reminderList = new ArrayList<>();
     private RecyclerView reminderRecyclerView;
@@ -57,19 +64,30 @@ public class RemindersActivity extends AppCompatActivity implements ActionMode.C
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        remindersDatabaseAdapter = new ReminderDatabaseAdapter(this);
+        remindersDatabaseAdapter.open();
+        showAppropriateScreen();
         setContentView(R.layout.activity_reminders);
+
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+
+            }
+        });
 
         rAAdView = findViewById(R.id.ra_ad_view);
         AdRequest pAAdRequest = new AdRequest.Builder().build();
         rAAdView.loadAd(pAAdRequest);
 
-        Float elevation = 0.0f;
-        getSupportActionBar().setElevation(elevation);
+        float elevation = 0.0f;
+        Objects.requireNonNull(getSupportActionBar()).setElevation(elevation);
 
         rARootLayout = findViewById(R.id.ch_root_layout);
 
-        remindersDatabaseAdapter = new ReminderDatabaseAdapter(this);
-        remindersDatabaseAdapter.open();
+
 
         initializeReminderList();
 
@@ -123,6 +141,37 @@ public class RemindersActivity extends AppCompatActivity implements ActionMode.C
                 openNewReminderDialog();
             }
         });
+    }
+
+    private void showAppropriateScreen(){
+        boolean thereIsAUserAcc = thereIsAUserAcc();
+        if (!thereIsAUserAcc) {
+            showOnboardingScrn();
+        }
+    }
+
+    private void showOnboardingScrn(){
+        Intent onboardingIntent = new Intent(RemindersActivity.this, OnboardingActivity.class);
+        startActivity(onboardingIntent);
+        finish();
+    }
+
+    private boolean thereIsAUserAcc(){
+        final boolean[] thereIsAUserAcc = {false};
+        Runnable userAccntRunnable = new Runnable() {
+            @Override
+            public void run() {
+                thereIsAUserAcc[0] =  remindersDatabaseAdapter.thereIsAUserAccnt();
+            }
+        };
+        Thread userAccntThread = new Thread(userAccntRunnable);
+        userAccntThread.start();
+        try {
+            userAccntThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return thereIsAUserAcc[0];
     }
 
     private void openNewReminderDialog(){
@@ -290,7 +339,7 @@ public class RemindersActivity extends AppCompatActivity implements ActionMode.C
 
         setNextReminderAlarm();
 
-        Snackbar.make(rARootLayout, "Reminder Updated",Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(rARootLayout, getString(R.string.rmdr_updtd),Snackbar.LENGTH_SHORT).show();
     }
 
     public void hideActionBar() {
@@ -460,7 +509,7 @@ public class RemindersActivity extends AppCompatActivity implements ActionMode.C
                     }
                 });
 
-                deleteRDialogBuilder.setPositiveButton(getResources().getString(R.string.delete_reminder_dialog_positive_button), new DialogInterface.OnClickListener() {
+                deleteRDialogBuilder.setPositiveButton(getResources().getString(R.string.delete), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -544,9 +593,9 @@ public class RemindersActivity extends AppCompatActivity implements ActionMode.C
     protected void shareApp(){
         Intent sAIntent = new Intent();
         sAIntent.setAction(Intent.ACTION_SEND);
-        sAIntent.putExtra(Intent.EXTRA_TEXT,"Reminder App is a fast and simple app that I use to schedule tasks. Get it from: https://play.google.com/store/apps/details?id="+getPackageName());
+        sAIntent.putExtra(Intent.EXTRA_TEXT,getString(R.string.pmtn_msg_txt)+getPackageName());
         sAIntent.setType("text/plain");
-        Intent.createChooser(sAIntent,"Share via");
+        Intent.createChooser(sAIntent,getString(R.string.sr_va));
         startActivity(sAIntent);
     }
 

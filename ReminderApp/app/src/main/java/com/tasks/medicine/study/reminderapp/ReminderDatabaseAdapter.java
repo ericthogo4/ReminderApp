@@ -41,6 +41,16 @@ public class ReminderDatabaseAdapter {
                     COL_REMINDER_TITLE + " TEXT, " +
                     COL_REMINDER_DTS + " TEXT );";
 
+    private static final String TABLE_USER = "tbl_usr";
+
+    private static final String COL_USER_ID = "_id";
+    private static final String COL_USER_NAME = "usr_nme";
+
+    private static final String CREATE_TABLE_USER =
+            "CREATE TABLE if not exists " + TABLE_USER + " ( " +
+                    COL_USER_ID + " INTEGER PRIMARY KEY autoincrement, " +
+                    COL_USER_NAME + " INTEGER );";
+
 
     protected ReminderDatabaseAdapter(Context mCtx) {
         this.mCtx = mCtx;
@@ -109,6 +119,11 @@ public class ReminderDatabaseAdapter {
             Collections.sort(reminderList,reminderComparator);
         }
 
+        if (reminderTableCursor != null){
+            reminderTableCursor.close();
+        }
+
+
         return reminderList;
     }
 
@@ -130,6 +145,31 @@ public class ReminderDatabaseAdapter {
         return reminderTIM;
     }
 
+
+    //TABLE_USER
+
+    protected void createUser(int userName) {
+
+        ContentValues userValues = new ContentValues();
+
+        userValues.put(COL_USER_NAME, userName);
+
+        remindersDatabase.insert(TABLE_USER, null, userValues);
+    }
+
+    protected boolean thereIsAUserAccnt(){
+        Cursor usrLstCursor = remindersDatabase.query(TABLE_USER, new String[]{COL_USER_ID},
+                null, null, null, null, null
+        );
+
+
+        int count = usrLstCursor.getCount();
+        usrLstCursor.close();
+        return count > 0;
+    }
+
+
+
     private static class DatabaseHelper extends SQLiteOpenHelper {
         DatabaseHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -137,11 +177,13 @@ public class ReminderDatabaseAdapter {
         @Override
         public void onCreate(SQLiteDatabase db) {
             db.execSQL(CREATE_TABLE_REMINDER);
+            db.execSQL(CREATE_TABLE_USER);
         }
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS " + TABLE_REMINDER);
+            db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
             onCreate(db);
         }
     }
